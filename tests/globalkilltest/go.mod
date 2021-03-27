@@ -1,4 +1,4 @@
-module github.com/pingcap/tests/globalkilltest
+module github.com/pingcap/tidb/tests/globalkilltest
 
 go 1.13
 
