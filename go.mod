@@ -28,6 +28,7 @@ require (
 	github.com/grpc-ecosystem/go-grpc-middleware v1.1.0
 	github.com/iancoleman/strcase v0.0.0-20191112232945-16388991a334
 	github.com/joho/sqltocsv v0.0.0-20190824231449-5650f27fd5b6 // indirect
+	github.com/juju/errors v0.0.0-20190930114154-d42613fe1ab9
 	github.com/klauspost/cpuid v1.2.1
 	github.com/kr/text v0.2.0 // indirect
 	github.com/ngaut/pools v0.0.0-20180318154953-b7bc8c42aac7
@@ -83,6 +84,7 @@ require (
 	gopkg.in/natefinch/lumberjack.v2 v2.0.0
 	gopkg.in/yaml.v2 v2.3.0 // indirect
 	honnef.co/go/tools v0.0.1-2020.1.6 // indirect
+	inet.af/tcpproxy v0.0.0-20200125044825-b6bb9b5b8252
 	modernc.org/mathutil v1.1.1 // indirect
 	sourcegraph.com/sourcegraph/appdash v0.0.0-20190731080439-ebfcffb1b5c0
 	sourcegraph.com/sourcegraph/appdash-data v0.0.0-20151005221446-73f23eafcf67
