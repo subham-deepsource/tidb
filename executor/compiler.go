@@ -53,7 +53,7 @@ func (c *Compiler) Compile(ctx context.Context, stmtNode ast.StmtNode) (*ExecStm
 		ctx = opentracing.ContextWithSpan(ctx, span1)
 	}
 
-	infoSchema := infoschema.GetInfoSchema(c.Ctx)
+	infoSchema := c.Ctx.GetInfoSchema().(infoschema.InfoSchema)
 	if err := plannercore.Preprocess(c.Ctx, stmtNode, infoSchema); err != nil {
 		return nil, err
 	}
@@ -257,7 +257,7 @@ func getStmtDbLabel(stmtNode ast.StmtNode) map[string]struct{} {
 	return dbLabelSet
 }
 
-func getDbFromResultNode(resultNode ast.ResultSetNode) []string { //may have duplicate db name
+func getDbFromResultNode(resultNode ast.ResultSetNode) []string { // may have duplicate db name
 	var dbLabels []string
 
 	if resultNode == nil {
